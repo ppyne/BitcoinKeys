@@ -71,7 +71,7 @@ class BitcoinKeys {
         return base58::encode($addr);
     }
     static function secretToPem($secret) {
-        $der_data = hex2bin('302e0201010420'.$secret.'a00706052b8104000a');
+        $der_data = hex2bin('302e0201010420'.$secret.'a00706052b8104000a'); // 2e is the size of the following in bytes
         $pem = chunk_split(base64_encode($der_data), 64, "\n");
         $pem = "-----BEGIN EC PRIVATE KEY-----\n".$pem."-----END EC PRIVATE KEY-----\n";
         return $pem;
