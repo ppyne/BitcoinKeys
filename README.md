@@ -54,6 +54,14 @@ You may also be interested by a bunch of static methods available:
 
 `BitcoinKeys::wifToKeyPair($wif)` will return a key pair (private, public), and the network, in an array, in hex format from a WIF formatted key. Network can be mainnet `00` or testnet `6f` (hex format), other values may raise exceptions.
 
+## Readings
+
+[Elliptic-curve keys in basic blockchain programming](https://davidederosa.com/basic-blockchain-programming/elliptic-curve-keys/)
+[Private key](https://en.bitcoin.it/wiki/Private_key)
+[Base58Check encoding](https://en.bitcoin.it/wiki/Base58Check_encoding)
+[Wallet Import Format](https://en.bitcoin.it/wiki/Wallet_import_format)
+[TP's Go Bitcoin Tests](https://gobittest.appspot.com/)
+
 ## License
 
 Copyright (c) 2021 Alexandre Vialle
