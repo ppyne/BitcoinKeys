@@ -1,5 +1,7 @@
 # BitcoinKeys
 
+<img src="bitcoin.png" alt="Bitcoin" width="100" height="100" />
+
 BitcoinKeys is a PHP class which can create and handle WIF (Wallet Import Format) private keys and (re)build their related P2PKH (Pay to PubkeyHash) addresses. The class is fully based on the PHP's OpenSSL extension and the class Base58 (included).
 
 P2PKH is the very first Bitcoin address format, starting with 1. The class will also handle private keys in WIF format, beginning with 5, based on the eliptic curve `secp256k1` (y² = x³ + 7). Private keys are 32 bytes long (256 bit), beginning from `0x01` to `0xFFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFE BAAE DCE6 AF48 A03B BFD2 5E8C D036 4140`. Public keys are 65 bytes long (64 bytes, plus 1 byte prefix `04`).
