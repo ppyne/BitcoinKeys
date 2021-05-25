@@ -8,6 +8,10 @@ P2PKH is the very first Bitcoin address format, starting with 1. The class will 
 
 The project also includes the class Base58, which encodes big integers (keys) with human friendly characters, the A to Z letters in both upper and lowercase, the numbers from 1 to 9, without the number "0" (zero), without the uppercase letter O (o), without the lowercase letter l (L) and without the uppercase I (i), since those 4 characters are known to bring confusions and errors in hominids sapiens sapiens.
 
+## Security warnings
+
+Private keys must be produced locally and kept in a safe place. Transfer over network may be done through a secure protocol using SSL for instance and private keys, or wallets, should be encrypted thanks to a method like [BIP38](https://github.com/bitcoin/bips/blob/master/bip-0038.mediawiki).
+
 ## Examples
 
 ```php
