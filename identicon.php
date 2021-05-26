@@ -32,7 +32,7 @@ require_once('BitcoinKeys.php');
 $bk = new BitcoinKeys();
 
 $checksum = crc32($bk->getAddress());
-$arr = str_split(sprintf("%032b\n", $checksum));
+$arr = str_split(sprintf("%032b", $checksum));
 
 // Color hue
 $h = $checksum % 360;
