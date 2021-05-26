@@ -25,6 +25,8 @@
 // ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 // POSSIBILITY OF SUCH DAMAGE.
 
+header('Content-Type: image/svg+xml');
+
 require_once('BitcoinKeys.php');
 
 $bk = new BitcoinKeys();
