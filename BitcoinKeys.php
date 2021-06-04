@@ -67,7 +67,7 @@ class BitcoinKeys {
         $bh3 = openssl_digest(hex2bin($n2), 'sha256', true);
         $h4 = bin2hex(openssl_digest($bh3, 'sha256', true));
         $f4 = substr($h4, 0, 8);
-        $addr = $n2.$f4;
+        $addr = $h4.$f4;
         return base58::encode($addr);
     }
     static function secretToPem($secret) {
